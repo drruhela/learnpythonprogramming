@@ -1,0 +1,334 @@
+body {
+	background-color: rgb(55,113,161) !important;
+	transition: background-color .5s;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+
+.navbar .logo {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 100px;
+
+	
+}
+.navbar ul {
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(70,134,184);
+	
+	
+
+}
+
+.navbar li {
+
+	float: left;
+	width: 12em;
+
+
+}
+
+.navbar li a {
+
+	display: block;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	
+}
+
+
+.navbar li a:hover:not(.active) {
+
+	background-color: rgb(255,232,115);
+	color: rgb(55,113,161);
+	text-decoration: none;
+
+}
+
+.navbar .active {
+
+	background-color: rgb(55,113,161);
+	color: rgb(255,232,115);
+	text-decoration: none;
+	
+}
+
+/*For the side navbar used in the tutorials page:
+*/
+.sidenav {
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    /*margin-top:-21px;*/
+    top:0;
+    left: 0;
+    background-color: rgb(70,134,184);
+    overflow-x:hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav ul {
+    list-style: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none !important;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    color:rgb(255,232,115) ;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgb(55,113,161);
+	background-color: rgb(255,232,115);
+}
+
+.sideNavOpenBtn {
+	cursor: pointer;
+	margin-left: 15px;
+	position: sticky;
+	top: 5px;
+	z-index: 1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 38px;
+    margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+    color: rgb(55,113,161);
+    background-color: rgb(70,134,184);
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+::-webkit-scrollbar { 
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(255,232,115);
+}
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.tutorialBody {
+    font-size: 20px;
+    color: white;
+    margin-left: 25px;
+    padding: 55px;
+}
+
+.CodeMirror {
+	font-size: 12pt;
+	width: 42%;
+	height: 300px;
+	display: inline-block;
+	border: solid;
+	border-color: rgb(255,232,115);
+	border-radius: 3px;
+}
+
+#edoutput {
+	width: 42%;
+	height: 300px;
+	background-color: black;
+	color: yellow;
+	border-color: rgb(255,232,115);
+	padding-left: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	overflow: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mycanvas {
+	background-color: white;
+	border-radius: 5px;
+	border-color: rgb(255,232,115);
+	width: 400px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.runButton {
+	background-color: rgb(255,232,115);
+	color: rgb(55,113,161);
+	border: solid;
+	border-color: rgb(70,134,184);
+	border-width: 2px;
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin: 10px;
+	font-family: "Lucida Console", Lucida , monospace; 
+	outline: none;
+	vertical-align: top;
+}
+
+.runButton:hover {
+	/*background-color: yellow;*/
+	color: rgb(0, 122, 204);
+}
+
+.clearButton {
+	background-color: rgb(255,232,115);
+	color: rgb(55,113,161);
+	border: solid;
+	border-color: rgb(70,134,184);
+	border-width: 2px;
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin: 10px;
+	font-family: "Lucida Console", Lucida , monospace; 
+	outline: none;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.clearButton:hover {
+	/*background-color: yellow;*/
+	color: rgb(0, 122, 204);
+}
+
+
+/*Headings on the Basics Tutorial Page. */
+.heading {
+	font-family: 'Lucida Console', Lucida , monospace;
+	font-size: 38px;
+	/*color: rgb(255,255,255);*/
+	margin-left: 80px;
+}
+
+.lessonBody {
+	font-family: 'Consolas';
+	color: white;
+	font-size: 20px;
+	margin-left: 80px;
+	padding-right: 15%;
+}
+
+.exampleCode {
+	width: 75%;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 2px solid rgb(255,232,115);
+    font-weight: normal;
+    text-align: center !important;
+    font-size: 18px;
+    padding: 4px !important;
+}
+
+.jumbotron {
+	font-family: "Lucida Console", Lucida , monospace;
+	text-align: center;
+	background-color: rgb(255, 232, 115) !important;
+	
+	
+}
+
+.jumbotron h1{
+
+	font-weight: bold;
+	font-size: 6em !important;
+
+}
+
+
+.twoColumns {
+	font-family: "Lucida Console", Lucida , monospace;
+	color: rgb(255,217,72);
+	font-size: 1.5em;
+	margin-left: 15% !important;
+	margin-right: 15% !important;
+	margin-bottom: 1%;
+}
+
+.installPython {
+	width: 50%;
+	float: left;
+}
+
+.websiteExamples {
+	text-align: center;
+	font-size: 1.5em;
+	width: 50%;
+	float: right;
+}
+
+.pythonLink {
+	width: 75%;
+}
+
+.downloadLink {
+	color: rgb(255,232,115);
+}
+
+.slidesContainer {
+
+	
+}
+.slides {
+	display: none;
+	max-height: 3em;
+	width: auto;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(255,255,255);
+}
+
+footer {
+
+	text-align: center;
+	color: rgb(255,217,72);
+	background-color: rgb(70,134,184);
+	clear: both;
+	padding: 1em;
+
+}

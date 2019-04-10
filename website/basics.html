@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="websiteIcon.png">
+		<title>Basics | Learn Python!</title>
+
+		<meta name="description" content="A free interactive tutorial designed to teach programmers of any level the basics and advanced topics of Python."/>
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<script type="text/javascript" src="codemirror/js/jquery.min.js"></script>
+
+		<script src="http://www.skulpt.org/static/skulpt.min.js" type="text/javascript"></script> 
+		<script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script> 
+		<script type="text/javascript" src="lib/codemirror.js"></script>
+		<link rel="stylesheet" type="text/css" href="lib/codemirror.css">
+		<link rel="stylesheet" type="text/css" href="theme/monokai.css">
+		<script type="text/javascript" src="mode/python/python.js"></script>
+		<script type="text/javascript" src="editor.js"></script>
+
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="navbar">
+			<ul>
+				<li> <img class="logo" src="pythonLogo.png"></li>
+
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="tutorials.html">Tutorials</a></li>
+				<li> <a href="resources.html">Resources</a></li>
+				<li> <a href="about.html">About</a></li>
+				<li> <a href="contact.html">Contact</a></li>
+				<li> <a href="forum.html">Forum</a></li>
+			</ul>
+		</div>
+        
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">The Basics</a>
+            <ul>
+                <li><a href="#output">Output</a></li>
+                <li><a href="#variables">Variables and Datatypes</a></li>
+                <li><a href="#strings">Strings</a></li>
+                <li><a href="#gettingInput">Getting Input</a></li>
+                <li><a href="#operators">Operators</a></li>
+                <li><a href="#loops">Loops</a></li>
+                <li><a href="#conditionals">Conditionals</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#functions">Functions</a></li>
+            </ul>
+		  <a href="#">More with Python</a>
+            <ul>
+                <li><a href="#">Nested Loops</a></li>
+                <li><a href="#">Recursion</a></li>
+                <li><a href="#">More Lists</a></li>
+                <li><a href="#">Dictionaries</a></li>
+                <li><a href="#">More Strings</a></li>
+                <li><a href="#">Sorting</a></li>
+                <li><a href="#">Searching</a></li>
+                <li><a href="#">Object-Oriented Programming</a></li>
+            </ul>
+          <a href="#">GUI</a>
+            <ul>
+            	<li><a href="#">wxPython</a></li>
+                <li><a href="#">Tkinter</a></li>
+                <li><a href="#">Turtle Graphics</a></li>
+                <li><a href="#">PyGame</a></li>
+                <li><a href="#">More Modules</a></li>
+            </ul>
+		  <a href="#">Exercises</a>
+          <a href="#">Assessments</a>
+		</div>
+
+		<div id="main" style=" font-family: 'Lucida Console', Lucida , monospace; font-size: 50px; color: rgb(255, 232, 115)">
+			
+            <span class="sideNavOpenBtn" style="font-size: 50px; cursor:pointer; color: rgb(255, 232, 115);" onclick="openNav()" >&#9776; </span>The Basics
+            <br/><br/>
+            <div class="heading">Getting Started</div>
+            <div class="lessonBody">You can follow this tutorial on your own computer or on this website. In order to program with python on your computer, it must be installed. On macOS, Python 2 comes pre-installed. You can download and install python from <a href="https://www.python.org/" style="color: rgb(255,217,72);">python.org</a>. Python files are saved using a .py extension. However, python can be coded straight from the terminal as well. On Mac, open Terminal. On Windows, open Command Prompt. Next, type "python" and press enter. From here on, you can program with python right in the terminal! To exit python, type exit().
+
+            <pre class="exampleCode" style="width: 50%;">>>> print("Hello World!")<br/>Hello World!</pre>
+            </div>
+
+            <br/>
+
+            <div id="output">
+
+        		<div class="heading">Output</div>
+        		<div class="lessonBody">In programming, the output is what is displayed to the user when running a program. In python, the <code>print()</code> function is used to display text. This is one of the many built-in functions that come with Python. Like other functions in Python, the name of the function is followed by parentheses and takes an argument, or multiple arguments. An argument is what is put inside the parentheses. The print statement outputs whatever is put inside the parentheses. Python 2 does not require using parentheses when using print, but Python 3 does. To display numbers, the numbers can go straight in the parentheses. To print text, it must be surrounded with quotes. This is known as a string. Other data types, such as booleans, can also be printed.
+
+        		<pre class="exampleCode" style="width: 50%;">>>> print(100)<br/>100<br/>>>> print("Print this.")<br/>Print this.</pre>
+
+        		</div>
+        	</div>
+
+        	<br/>
+
+        	<div id="variables">
+
+        		<div class="heading">Variables and Data Types</div>
+        		<div class="lessonBody">A variables is a storage space that holds a specific value. In some programming languages, such as Java, variables can be initalized without a value. In Python, this is not the case. A variable in Python must be assigned some sort of value when it is initalized. A variable assignment statement is used to assign some sort of value to a variable. This value can be of multiple different data types. These data types are: numbers, strings, booleans, lists, dictionaries, and tuples.<br/><br/>
+        		There are four kinds of numeric data types: integers, long integers, floating point numbers, and complex numbers. An integer is just a "normal" number, positive or negative. A long integer is larger than an integer. An integer holds up to 32 bits of data, and anything larger becomes a long. A float is a number with a decimal. These three data types are used more often than complex numbers.<br/><br/>
+        		A boolean is a data type with two possible values: True and False. A string can be made up of any characters (numbers, letters, and symbols) and is generally surrounded by double quotes "", but can also be surrounded by single quotes ''.<br/><br/>
+        		Here are some examples of the most common data types:<br/><br/>
+
+        		<table>
+        			<tr>
+	        			<th>Integer</th>
+	        			<th>Float</th>
+	        			<th>String</th>
+	        			<th>Boolean</th>
+	        			<th>List</th>
+	        			<th>Tuple</th>
+	        		</tr>
+	        		<tr>
+	        			<td>15845098374268340</td>
+	        			<td>523987.957</td>
+	        			<td>"abcABC123"</td>
+	        			<td>False</td>
+	        			<td>[1, 542, "abc", "s"]</td>
+	        			<td>(2, 43, 63, 3)</td>
+	        		</tr>
+        		</table>
+        		<br/>
+        		Since Python variables cannot be initialized or declared without a value assignment, a variable's data type does not need to be explicitly stated. A variable is assigned a value by using an equal sign "=" to the right of the variable name. The equal sign is followed by the value you want to assign the variable.
+
+        		<pre class="exampleCode">>>> varInt = 4  #int<br/>>>> varStr = "hello"  #string<br/>>>> varBool = True  #boolean<br/>>>> varList = [2, 12 , 5, "abc"]  #list<br/>>>> varTuple = (1, 34, 5, 9) #tuple</pre>
+        		(Note: In Python, the number sign "#" indicates a single line comment. This means that whatever characters come after the "#" on the same line are not read by the python interpreter. Comments are made to help whoever is reading the code to understand it. A multi-line comment is surrounded by three single quotes.)
+        		<pre class="exampleCode">>>> #This is a single line comment.</pre>
+        		<br/>
+        		When naming variables, there are a few rules to keep in mind:
+        		
+        		<ul>1) It cannot start with a number. It must start with a letter or some other acceptable ASCII character.</ul>
+        		<ul>2) A variable name can be made up of any ASCII characters, not including Python operators or characters with other specific functions (eg. "+", "-", "*", "-", "#", "%", ",", ".", "{}", "()", and many others.)</ul>
+        		<ul>3) When naming a variable made up of multiple words, you can use camelCase or underscores to seperate the words since spaces are not allowed. This is not a rule, but it makes reading the code much easier.</ul>
+				<ul>4) When assigning a constant (a variable set to a permanent value), it is common practice to use all capital letters. This is also not a rule.</ul>
+				A variable can be displayed to the user of a program by using the print statement. The variable name goes inside the parentheses .
+				<pre class="exampleCode">>>> number = 974<br/>>>> print(number)<br/>974</pre>
+
+        		</div>
+        	</div>
+
+        	<br/>
+
+        	<div id="strings">
+
+        		<div class="heading">Strings</div>
+        		<div class="lessonBody">
+        			A string is a sequence of characters surrounded by either single or double quotes.
+        			<pre class="exampleCode">>>> name = "bob"<br/>>>> name2 = 'bob'<br/>>>> print(name)<br/>bob<br/>>>> print(name2)<br/>bob</pre>
+        			<br/>
+        			An advantage of using double quotes is that you can use single quotes inside the string. If a string is defined using single quotes, then you cannot use a single quote within the string. Otherwise, the string will break.
+        			<pre class="exampleCode">>>> sentence = "Hello, I'm Bob!"<br/>>>> print(sentence)<br/>Hello, I'm Bob!</pre>
+        			<br/>
+        			Remember, you can also print a string by directly entering the string as an argument in the print function rather than using a variable.
+        			<pre class="exampleCode">>>> print("This is a string.")<br/>This is a string.</pre>
+
+        		</div>
+
+        	</div>
+
+            <br/>
+
+            <div id="gettingInput">
+                
+                <div class="heading">Getting Input</div>
+                <div class="lessonBody">
+                    Getting input from the user is very important for some programs. For example, if you want to ask the user for two numbers to add, you need a way to get the input and store it. In python 2, the <code>raw_input()</code> function is used. In python 3, the <code>input()</code> function is used.  Both of these functions do the same thing, which is they return whatever the user types in as a string. In python 2, <code>input()</code> also takes user input, but not in the same way. The difference is that it evaluates the characters inputed with python. This means that if a number is entered, <code>input()</code> will return the input with a numerical data type (such as aninteger or a float). If a boolean value (True or False) is entered, then it will return a boolean value. If the input is a string or a set of random characters, it must be surrounded by quotes. Otherwise, it will return an error. With <code>raw_input()</code>, all input is regarded as a string.
+                    <br/><br/>
+                    Both the <code>raw_input</code> function of python 2 and the <code>input()</code> function of python 3 work the same way. Inside the parentheses, you can put a string of characters that is displayed to the user when the program asks for input. If you leave the parentheses empty, no text will be displayed to the user. Generally, instructions or a question are put into the parentheses so the user knows what the program is asking for.
+                    <br/><br/>
+                    Python 2:
+                    <pre class="exampleCode">>>> raw_input("Enter anything: ")<br/>Enter a word: random words<br/>'random words'</pre>
+
+                    <br/>
+                    Python 3:
+                    <pre class="exampleCode">>>> input("Enter anything: ")<br/>Enter a word: random words<br/>'random words'</pre>
+                    <br/>
+                    In order to use the input, it must be stored. To do this, you can assign a variable to the input. The variable will hold the string value of the input. If you do not want to store the input as a string, you can convert it in the same statement. For example, if you want to store the input as an integer value, you can use the <code>int()</code> function.
+                    <br/><br/>
+                    <pre class="exampleCode">>>> var = input("Enter some text: ")<br/>Enter some text: this is some text<br/>>>> var2 = int(input("Enter a number: "))<br/>Enter a number: 52<br/>>>>print(var)<br/>this is some text<br/>>>> print(var2 + 3)<br/>55</pre>
+                </div>
+
+            </div>
+
+            <br/>
+
+            <div id="operators">
+                
+                <div class="heading">Operators</div>
+                <div class="lessonBody">
+                    Math is a large part of programming and is used from the simplest of calculating to more complicated computing. In order to use math with python, or any other programming language, you need to learn the operators. These operators include "+", "-" ,"x", "/", and more. You likely have already seen these four basic operators in any math class. However, there are more that you probably have not seen before, such as mod ("%"). Mod is an operation that finds the remainder when a number is divided by another number. This can be useful in determining if a number is odd, even, or a factor of some number. These are the five most basic and important mathematical operators in python. 
+
+                    <br/><br/>
+                    <pre class="exampleCode">>>> num1 = 5<br/>>>> num2 = 4<br/>>>> sum = num1 + num2<br/>>>> diff = num1 - num2<br/>>>> product = num1 * num2<br/>>>> quotient = num1 / num2<br/>>>> mod = num1 % num2<br/>>>> print(sum)<br/>9<br/>>>> print(diff)<br/>1<br/>>>> print(product)<br/>20<br/>>>> print(quotient)<br/>1.25<br/>>>> print(mod)<br/>1</pre>
+
+
+                </div>
+
+            </div>
+
+        	</div>
+            <!--
+            <div class="tutorialBody" style=" font-family: inherit">If you have little or no prior knowledge of the Python programming language, start with the <a href="#" style="color: rgb(255, 232, 115)">basics</a>. If you are already familiar with the basics, then check out <a href="#" style="color: rgb(255, 232, 115)">more Python topics</a>. If you are interested in learning about creating user interfaces, you can look into <a href="#" style="color: rgb(255, 232, 115)">graphics and UI</a>.
+            	
+            	<br/><br/>
+
+            	<div> 
+
+            		Code Editor:
+            		<br/>
+	            	<textarea id="code"></textarea>
+
+					<button id="skulpt_run" class="runButton">&#9658&#9658Run</button> 
+
+					<pre id="edoutput">&#62;&#62;&#62; </pre> 
+					
+					<div id="mycanvas"></div> 
+					
+
+            	</div>
+            	
+
+            </div>
+        	-->
+        	
+        </div>
+        	<!--<div id="codemirror-textarea"></div>-->
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "300px";
+            
+		    
+            document.getElementById("main").style.marginLeft = "300px";
+            
+		    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("main").style.marginLeft= "0";
+		    document.body.style.backgroundColor = "white";
+		}
+		</script>
+
+		<footer>Copyright &copy; LearnPythonProgramming.org</footer>
+
+	</body>
+</html>
