@@ -49,8 +49,8 @@
                 <li><a href="#strings">Strings</a></li>
                 <li><a href="#gettingInput">Getting Input</a></li>
                 <li><a href="#operators">Operators</a></li>
-                <li><a href="#loops">Loops</a></li>
                 <li><a href="#conditionals">Conditionals</a></li>
+                <li><a href="#loops">Loops</a></li>
                 <li><a href="#lists">Lists</a></li>
                 <li><a href="#functions">Functions</a></li>
             </ul>
@@ -205,26 +205,47 @@
 
             </div>
 
+            <br/>
+
+            <div id="conditionals">
+                
+                <div class="heading">Conditionals</div>
+                <div class="lessonBody">
+                    In programming, conditionals are blocks of code that run only if a certain statement is true. The syntax for writing an <code>if</code> statement is: <code>if conditional == True:</code> followed by an indent on the next line. The indented code under an if statement runs only if the conditional is true. Otherwise, the code is skipped. An <code>elif</code> is similar to an if statement but can come only after an <code>if</code> or another <code>elif</code> Lastly, an <code>else</code> statement runs if none of the if or elif statements are true.
+
+                    <br/>
+                    <pre class="exampleCode">>>> x = 10<br/>>>> y = 4<br/>>>> if x < y:<br/>...    print(x)<br/>... elif x == y:<br/>...    print("equal")<br/>... else:<br/>...    print(y)<br/>...<br/>4</pre>
+
+            </div>
+
+            <br/>
+
             <div id="loops">
                 
                 <div class="heading">Loops</div>
                 <div class="lessonBody">
                     When a task needs to be done multiple times, a loop is used. There are two types of loops in python: for loops and while loops.
                     <br/><br/>
-                    A for loop is generally used when you know the number of times a task needs to be repeated. An simple example of when to use a for loop is if you want to print all numbers from 0 to 100. The syntax for writing a for loop is <code>for i in range(start, end): </code>. The integer <code>i</code> is the iterative variable in the loop. When the loop runs for the first time, <code>i=start</code> abd everytime the loop runs after that, <code>i</code> will increment by 1 until <code>i=end</code>. If the program requires the iterative variable to increment by less than or more than 1, the for loop can look something like this: <code>for i in range(start, end, 2) </code>. In this case, <code>i</code> would increment by 2. The iterative value can also decrease instead of increasing if the third argument is a negative number. If a <code>start</code> value is not specified, the default, 0, will be used. By default, <code>i</code> will increment by 1.
+                    A for loop is generally used when you know the number of times a task needs to be repeated. An simple example of when to use a for loop is if you want to print all numbers from 0 to 100. The syntax for writing a for loop is <code>for i in range(start, end): </code>. The integer <code>i</code> is the iterative variable in the loop. When the loop runs for the first time, <code>i=start</code> and everytime the loop runs after that, <code>i</code> will increment by 1 until <code>i=end</code>. If the program requires the iterative variable to increment by more than 1, the for loop can look something like this: <code>for i in range(start, end, 2) </code>. In this case, <code>i</code> would increment by 2. The iterative value can also decrease instead of increasing if the third argument is a negative number. If a <code>start</code> value is not specified, the default, 0, will be used. By default, <code>i</code> will increment by 1.
 
                     <br/><br/>
-                    <pre class="exampleCode">>>>for i in range(10): <br/>...    print(i)<br/>...<br/>0<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>>>></pre>
+                    <pre class="exampleCode">>>> for i in range(10): <br/>...    print(i)<br/>...<br/>0<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>>>></pre>
 
                     <br/>
-                    <pre class="exampleCode">>>>for i in range(1,11): <br/>...    print(i)<br/>...<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>>>></pre>
+                    <pre class="exampleCode">>>> for i in range(1,11): <br/>...    print(i)<br/>...<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>>>></pre>
 
                     <br/>
-                    <pre class="exampleCode">>>>for i in range(10,0,-1)</pre>
+                    <pre class="exampleCode">>>> for i in range(10,0,-1): <br/>...    print(i)<br/>...<br/>10<br/>9<br/>8<br/>7<br/>6<br/>5<br/>4<br/>3<br/>2<br/>1<br/>>>></pre>
+
+                    <br/>
+
+                    A while loop is a loop that runs while a conditional statement is true.
 
                 </div>
 
             </div>
+
+            
 
         </div>
             <!--
