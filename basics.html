@@ -205,7 +205,28 @@
 
             </div>
 
-        	</div>
+            <div id="loops">
+                
+                <div class="heading">Loops</div>
+                <div class="lessonBody">
+                    When a task needs to be done multiple times, a loop is used. There are two types of loops in python: for loops and while loops.
+                    <br/><br/>
+                    A for loop is generally used when you know the number of times a task needs to be repeated. An simple example of when to use a for loop is if you want to print all numbers from 0 to 100. The syntax for writing a for loop is <code>for i in range(start, end): </code>. The integer <code>i</code> is the iterative variable in the loop. When the loop runs for the first time, <code>i=start</code> abd everytime the loop runs after that, <code>i</code> will increment by 1 until <code>i=end</code>. If the program requires the iterative variable to increment by less than or more than 1, the for loop can look something like this: <code>for i in range(start, end, 2) </code>. In this case, <code>i</code> would increment by 2. The iterative value can also decrease instead of increasing if the third argument is a negative number. If a <code>start</code> value is not specified, the default, 0, will be used. By default, <code>i</code> will increment by 1.
+
+                    <br/><br/>
+                    <pre class="exampleCode">>>>for i in range(10): <br/>...    print(i)<br/>...<br/>0<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>>>></pre>
+
+                    <br/>
+                    <pre class="exampleCode">>>>for i in range(1,11): <br/>...    print(i)<br/>...<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>>>></pre>
+
+                    <br/>
+                    <pre class="exampleCode">>>>for i in range(10,0,-1)</pre>
+
+                </div>
+
+            </div>
+
+        </div>
             <!--
             <div class="tutorialBody" style=" font-family: inherit">If you have little or no prior knowledge of the Python programming language, start with the <a href="#" style="color: rgb(255, 232, 115)">basics</a>. If you are already familiar with the basics, then check out <a href="#" style="color: rgb(255, 232, 115)">more Python topics</a>. If you are interested in learning about creating user interfaces, you can look into <a href="#" style="color: rgb(255, 232, 115)">graphics and UI</a>.
             	
