@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156493389-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-156493389-1');
+		</script>
+
 		<link rel="icon" href="websiteIcon.png">
 		<title>Resources | Learn Python!</title>
 
@@ -22,14 +32,46 @@
 				<li> <a href="index.html">Home</a></li>
 				<li> <a href="tutorials.html">Tutorials</a></li>
 				<li> <a class="active" href="resources.html">Resources</a></li>
-				<li> <a href="about.html">About</a></li>
-				<li> <a href="contact.html">Contact</a></li>
-				<li> <a href="forum.html">Forum</a></li>
+				<!--<li> <a href="about.html">About</a></li>-->
+				<!--<li> <a href="contact.html">Contact</a></li>-->
+				<!--<li> <a href="forum.html">Forum</a></li>-->
 
 			</ul>
 		</div>
 
-		<!--<footer>Copyright &copy; LearnPythonProgramming.org</footer>-->
+		<div id="main" style=" font-family: 'Lucida Console', Lucida , monospace; font-size: 50px; color: rgb(255, 232, 115) ">Links
 
+            <div class="tutorialBody" style=" font-family: inherit">
+            	<ul>
+            		<li><a href="python.org/downloads/" style="color: rgb(255, 232, 115)">Download Python</a></li>
+            		<li><a href="https://docs.python.org/2/" style="color: rgb(255, 232, 115)">Python 2 Documentation</a></li>
+            	 	<li><a href="https://docs.python.org/3/" style="color: rgb(255, 232, 115)">Python 3 Documentation</a></li>
+            	 	<li><a href="https://repl.it/" style="color: rgb(255, 232, 115)">Online IDE</a></li>
+
+            	</ul>
+
+            </div>
+
+        </div>
+		
+
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "300px";
+            
+		    
+            document.getElementById("main").style.marginLeft = "300px";
+            
+		    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("main").style.marginLeft= "0";
+		    document.body.style.backgroundColor = "white";
+		}
+		</script>
+
+		<footer>Copyright &copy; LearnPythonProgramming.org</footer>
 	</body>
 </html>

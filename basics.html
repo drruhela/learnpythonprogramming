@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156493389-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-156493389-1');
+        </script>
+
 		<link rel="icon" href="websiteIcon.png">
 		<title>Basics | Learn Python!</title>
 
@@ -33,9 +43,9 @@
 				<li> <a href="index.html">Home</a></li>
 				<li> <a href="tutorials.html">Tutorials</a></li>
 				<li> <a href="resources.html">Resources</a></li>
-				<li> <a href="about.html">About</a></li>
-				<li> <a href="contact.html">Contact</a></li>
-				<li> <a href="forum.html">Forum</a></li>
+				<!--<li> <a href="about.html">About</a></li>-->
+                <!--<li> <a href="contact.html">Contact</a></li>-->
+				<!--<li> <a href="forum.html">Forum</a></li>-->
 			</ul>
 		</div>
         
@@ -54,27 +64,25 @@
                 <li><a href="#lists">Lists</a></li>
                 <li><a href="#functions">Functions</a></li>
             </ul>
-		  <a href="#">More with Python</a>
+		  <a href="morePython.html">More with Python</a>
             <ul>
-                <li><a href="#">Nested Loops</a></li>
-                <li><a href="#">Recursion</a></li>
-                <li><a href="#">More Lists</a></li>
-                <li><a href="#">Dictionaries</a></li>
-                <li><a href="#">More Strings</a></li>
-                <li><a href="#">Sorting</a></li>
-                <li><a href="#">Searching</a></li>
-                <li><a href="#">Object-Oriented Programming</a></li>
+                <li><a href="morePython.html#">Nested Loops</a></li>
+                <li><a href="morePython.html#">Recursion</a></li>
+                <li><a href="morePython.html#">More Lists</a></li>
+                <li><a href="morePython.html#">Dictionaries</a></li>
+                <li><a href="morePython.html#">More Strings</a></li>
+                <li><a href="morePython.html#">Sorting</a></li>
+                <li><a href="morePython.html#">Searching</a></li>
+                <li><a href="morePython.html#">Object-Oriented Programming</a></li>
             </ul>
-          <a href="#">GUI</a>
+          <a href="gui.html">GUI</a>
             <ul>
-            	<li><a href="#">wxPython</a></li>
-                <li><a href="#">Tkinter</a></li>
-                <li><a href="#">Turtle Graphics</a></li>
-                <li><a href="#">PyGame</a></li>
-                <li><a href="#">More Modules</a></li>
+                <li><a href="gui.html#">wxPython</a></li>
+                <li><a href="gui.html#">Tkinter</a></li>
+                <li><a href="gui.html#">Turtle Graphics</a></li>
+                <li><a href="gui.html#">PyGame</a></li>
+                <li><a href="gui.html#">More Modules</a></li>
             </ul>
-		  <a href="#">Exercises</a>
-          <a href="#">Assessments</a>
 		</div>
 
 		<div id="main" style=" font-family: 'Lucida Console', Lucida , monospace; font-size: 50px; color: rgb(255, 232, 115)">
@@ -239,13 +247,23 @@
 
                     <br/>
 
-                    A while loop is a loop that runs while a conditional statement is true.
+                    A while loop is a loop that runs while a conditional statement is true. At the beginning of every iteration, the condition is checked and if it is true, the code inside the loops runs. To keep the while loop from becoming an infinite loop, something in the condition must be changed. In the following loop, <code>i<10</code> is the condition. <code>i += 1</code> increments <code>i</code> by 1 each time the loop runs. So, the condition becomes false when <code>i = 10</code>. This keeps the loop from becoming infinite.
+
+                    <br/><br/>
+                    <pre class="exampleCode">>>> i = 0<br/>>>> while i < 10:<br/>...    print(i)<br/>...    i += 1<br/>...<br/>0<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>>>></pre>
 
                 </div>
 
             </div>
 
-            
+            <div id="lists">
+                
+                <div class="heading">Lists</div>
+                <div class="lessonBody">
+                    A list is one type of data structure used in Python. It is useful for purposes such as storing multiple variables or data. A list assignment looks something like <code>list_name = [var1, var2, var3]</code>. 
+
+                </div>
+            </div>
 
         </div>
             <!--

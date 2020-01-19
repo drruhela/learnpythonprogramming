@@ -329,6 +329,7 @@ footer {
 	color: rgb(255,217,72);
 	background-color: rgb(70,134,184);
 	clear: both;
+	bottom: 0;
 	padding: 1em;
 
 }
